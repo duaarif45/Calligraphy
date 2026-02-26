@@ -1,18 +1,2708 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caligraphy</title>
-    <link rel="stylesheet" href="style css/style.css">
+    <title>Art of Calligraphy - Learn the Ancient Craft</title>
+    <link rel="stylesheet" href="bootstrap files/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css file/style.css">
+    <link rel="stylesheet" href="css file/mediaquery.css">
 </head>
+
+
 <body>
-    
+
+
+
+    <div id="preloader" class="preloader">
+        <div class="loader">
+            <div class="ink-drop"></div>
+            <div class="ink-drop"></div>
+            <div class="ink-drop"></div>
+            <div class="ink-drop"></div>
+            <div class="logo">
+                <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <div class="loading-text">Loading</div>
+        </div>
+    </div>
+
+
+    <header>
+        <nav class="navbar glass-nav" id="navbar">
+            <div class="nav-container">
+                <div class="nav-inner">
+                    <div class="logo-wrapper">
+                        <i class="fa-solid fa-pen-nib logo-icon"></i>
+                        <span class="heading-font logo-text"><span class="logo-accent">Quick</span>Calligraphy</span>
+                    </div>
+
+                    <div class="desktop-nav">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About Us</a>
+                        <a href="#origins-history" class="nav-link">History</a>
+
+                        <div class="drop">
+                            <button class="btn2">
+                                <a href="#calligraphy"
+                                    style="text-decoration: none; font-style: normal; color: #8b949e;"> Calligraphy
+                                    Types</a>
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                            </button>
+                            <div class="drop-content">
+                                <a href="#western-detail" onclick="handleNavClick('calligraphy', 'western')">
+                                    <i class="fa-solid fa-feather-pointed icon-blue"></i>
+                                    <div>
+                                        <div class="dropdown-title">Western</div>
+                                        <div class="dropdown-subtitle">Latin Scripts</div>
+                                    </div>
+                                </a>
+                                <a href="#arabic-detail" onclick="handleNavClick('calligraphy', 'arabic')">
+                                    <i class="fa-solid fa-star-and-crescent icon-emerald"></i>
+                                    <div>
+                                        <div class="dropdown-title">Arabic</div>
+                                        <div class="dropdown-subtitle">Islamic Art</div>
+                                    </div>
+                                </a>
+                                <a href="#oriental-detail" onclick="handleNavClick('calligraphy', 'oriental')">
+                                    <i class="fa-solid fa-yin-yang icon-red"></i>
+                                    <div>
+                                        <div class="dropdown-title">Oriental</div>
+                                        <div class="dropdown-subtitle">Brush Painting</div>
+                                    </div>
+                                </a>
+                                <a href="#indic-detail" onclick="handleNavClick('calligraphy', 'indic')">
+                                    <i class="fa-solid fa-om icon-orange"></i>
+                                    <div>
+                                        <div class="dropdown-title">Indic</div>
+                                        <div class="dropdown-subtitle">Sanskrit & Devanagari</div>
+                                    </div>
+                                </a>
+                                <a href="#greek-detail" onclick="handleNavClick('calligraphy', 'greek')">
+                                    <i class="fa-solid fa-landmark icon-blue"></i>
+                                    <div>
+                                        <div class="dropdown-title">Greek</div>
+                                        <div class="dropdown-subtitle">Ancient Scripts</div>
+                                    </div>
+                                </a>
+                                <a href="#hebrew-detail" onclick="handleNavClick('calligraphy', 'hebrew')">
+                                    <i class="fa-solid fa-star-of-david icon-purple"></i>
+                                    <div>
+                                        <div class="dropdown-title">Hebrew</div>
+                                        <div class="dropdown-subtitle">Sacred Jewish Art</div>
+                                    </div>
+                                </a>
+                                <a href="#cyrillic-detail" onclick="handleNavClick('calligraphy', 'cyrillic')">
+                                    <i class="fa-solid fa-cathedral icon-red"></i>
+                                    <div>
+                                        <div class="dropdown-title">Cyrillic</div>
+                                        <div class="dropdown-subtitle">Slavic Scripts</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="drop">
+                            <button class="btn2" onclick="window.location.href='#adult-kid-section'">
+                                Categories
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                            </button>
+                            <div class="drop-content">
+                                <a href="javascript:void(0)" onclick="switchToKids(); return false;">
+                                    <i class="fa-solid fa-child icon-blue"></i>
+                                    <div>
+                                        <div class="dropdown-title">For Kids</div>
+                                        <div class="dropdown-subtitle">Ages 6-12</div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" onclick="switchToAdults(); return false;">
+                                    <i class="fa-solid fa-user-graduate icon-emerald"></i>
+                                    <div>
+                                        <div class="dropdown-title">For Adults</div>
+                                        <div class="dropdown-subtitle">Ages 13+</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#feedback" class="nav-link">Feedback</a>
+                    </div>
+
+                    <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleSidebar()">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span><span class="logo-accent">Quick</span>Calligraphy</span>
+                </div>
+                <button class="sidebar-close" onclick="closeSidebar()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="sidebar-content">
+                <nav class="sidebar-nav">
+                    <a href="#home" class="sidebar-link" onclick="closeSidebar()">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#about" class="sidebar-link" onclick="closeSidebar()">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>About Us</span>
+                    </a>
+                    <a href="#origins-history" class="sidebar-link" onclick="closeSidebar()">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>History</span>
+                    </a>
+
+                    <div class="sidebar-dropdown">
+                        <button class="sidebar-drop-btn" onclick="toggleSidebarDropdown('types')">
+                            <span><i class="fa-solid fa-pen-nib"></i> Calligraphy Types</span>
+                            <i class="fa-solid fa-chevron-down" id="chevron-types"></i>
+                        </button>
+                        <div class="sidebar-drop-content" id="sidebar-drop-types">
+                            <a href="#western-detail" onclick="handleSidebarNav('western')">
+                                <i class="fa-solid fa-feather-pointed"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">Western</span>
+                                    <span class="drop-sub">Latin Scripts</span>
+                                </div>
+                            </a>
+                            <a href="#arabic-detail" onclick="handleSidebarNav('arabic')">
+                                <i class="fa-solid fa-star-and-crescent"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">Arabic</span>
+                                    <span class="drop-sub">Islamic Art</span>
+                                </div>
+                            </a>
+                            <a href="#oriental-detail" onclick="handleSidebarNav('oriental')">
+                                <i class="fa-solid fa-yin-yang"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">Oriental</span>
+                                    <span class="drop-sub">Brush Painting</span>
+                                </div>
+                            </a>
+                            <a href="#indic-detail" onclick="handleSidebarNav('indic')">
+                                <i class="fa-solid fa-om"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">Indic</span>
+                                    <span class="drop-sub">Sanskrit & Devanagari</span>
+                                </div>
+                            </a>
+                            <a href="#greek-detail" onclick="handleSidebarNav('greek')">
+                                <i class="fa-solid fa-landmark"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">Greek</span>
+                                    <span class="drop-sub">Ancient Scripts</span>
+                                </div>
+                            </a>
+                            <a href="#hebrew-detail" onclick="handleSidebarNav('hebrew')">
+                                <i class="fa-solid fa-star-of-david"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">Hebrew</span>
+                                    <span class="drop-sub">Sacred Jewish Art</span>
+                                </div>
+                            </a>
+                            <a href="#cyrillic-detail" onclick="handleSidebarNav('cyrillic')">
+                                <i class="fa-solid fa-cathedral"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">Cyrillic</span>
+                                    <span class="drop-sub">Slavic Scripts</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-dropdown">
+                        <button class="sidebar-drop-btn" onclick="toggleSidebarDropdown('categories')">
+                            <span><i class="fa-solid fa-layer-group"></i> Categories</span>
+                            <i class="fa-solid fa-chevron-down" id="chevron-categories"></i>
+                        </button>
+                        <div class="sidebar-drop-content" id="sidebar-drop-categories">
+                            <a href="#adult-kid-section" onclick="handleSidebarSwitch('kids')">
+                                <i class="fa-solid fa-child"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">For Kids</span>
+                                    <span class="drop-sub">Ages 6-12</span>
+                                </div>
+                            </a>
+                            <a href="#adult-kid-section" onclick="handleSidebarSwitch('adults')">
+                                <i class="fa-solid fa-user-graduate"></i>
+                                <div class="drop-text">
+                                    <span class="drop-main">For Adults</span>
+                                    <span class="drop-sub">Ages 13+</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#gallery" class="sidebar-link" onclick="closeSidebar()">
+                        <i class="fa-solid fa-images"></i>
+                        <span>Gallery</span>
+                    </a>
+                    <a href="#contact" class="sidebar-link" onclick="closeSidebar()">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                    <a href="#feedback" class="sidebar-link" onclick="closeSidebar()">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>Feedback</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <section class="home-section" id="home">
+
+            <div class="hero-bg"
+                style="background-image: url('pics/alhumd-Picsart-BackgroundRemover.jpg'); z-index: 3;"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">Master the Art of <span class="gradient-text">Beautiful Writing</span></h1>
+                <p class="hero-subtitle">Where every stroke tells a story</p>
+                <a href="#about" class="hero-btn">Explore Now</a>
+            </div>
+
+            <div class="floating-letters-home">
+                <span class="float-letter" style="--delay:0s; --top:20%; --left:10%">A</span>
+                <span class="float-letter" style="--delay:0.5s; --top:60%; --left:85%">文</span>
+                <span class="float-letter" style="--delay:1s; --top:30%; --left:90%">ک</span>
+                <span class="float-letter" style="--delay:1.5s; --top:70%; --left:15%">Ω</span>
+            </div>
+        </section>
 
 
 
 
 
-    <script src="logic js/logic.js"></script>
+
+
+        <!-- About us  -->
+        <section>
+            <div class="about-section" id="about">
+                <div class="bg-grid">
+                    <div class="shadow-svg1"></div>
+                    <div class="bg-svg">
+                        <svg class="svg-bg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+                            <path class="stroke-animate" d="M0,500 Q250,400 500,500 T1000,500" fill="none"
+                                stroke="#D4AF37" stroke-width="2"></path>
+                            <path class="stroke-animate" d="M0,600 Q250,500 500,600 T1000,600" fill="none"
+                                stroke="#D4AF37" stroke-width="1" style="animation-delay: 0.5s"></path>
+                            <path class="stroke-animate" d="M0,400 Q250,300 500,400 T1000,400" fill="none"
+                                stroke="#D4AF37" stroke-width="1" style="animation-delay: 1s"></path>
+                        </svg>
+
+                        <div class="about">
+                            <div class="about-content-wrapper">
+                                <div class="rotating-badge">
+                                    <svg class="rotate-badge" viewBox="0 0 100 100">
+                                        <defs>
+                                            <path id="circle"
+                                                d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                                        </defs>
+                                        <text font-size="8" fill="#D4AF37" font-family="Cinzel">
+                                            <textPath xlink:href="#circle">EST. 2024 • ART OF WRITING •
+                                                QUICKCALLIGRAPHY
+                                                •</textPath>
+                                        </text>
+                                    </svg>
+                                </div>
+
+                                <div class="badge-wrapper">
+                                    <span class="typewriter-badge">
+                                        Discover the Art
+                                    </span>
+                                </div>
+
+                                <h1 class="about-title heading-font fw-bold mb-3 display-1 gradient-text">
+                                    About Us
+                                </h1>
+
+                                <div class="script-font about-subtitle mb-3 fs-1 text-amber gradient-text rotate-text"
+                                    style="    font-family: 'Great Vibes', cursive; font-size: 60px!important;">
+                                    QuickCalligraphy
+                                </div>
+
+                                <p class="about-description body-font">
+                                    Welcome to <span class="text-amber">QuickCalligraphy</span> – your ultimate
+                                    destination for the art of beautiful writing. ✨
+                                </p>
+                                <div class="shadow-svg2"></div>
+
+                                <div class="scroll-icon-about">
+                                    <a href="#about-calligraphy">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#FFFFFF">
+                                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="about-calligraphy" class="section-about">
+
+                <div class="background-elements">
+                    <div class="bg-circle amber-circle"></div>
+                    <div class="bg-circle purple-circle"></div>
+                    <div class="bg-ring ring-large"></div>
+                    <div class="bg-ring ring-spin"></div>
+                </div>
+
+                <div class="floating-letters">
+                    <span class="letter letter-a">A</span>
+                    <span class="letter letter-japanese">文</span>
+                    <span class="letter letter-hindi">क</span>
+                    <span class="letter letter-arabic">الف</span>
+                </div>
+
+                <div class="content-wrapper">
+
+                    <div class="section-header">
+                        <div class="header-label">
+                            <span class="pulse-dot"></span>
+                            <span>The Art of Writing</span>
+                        </div>
+                        <h2>About <span class="gradient-text">Calligraphy</span></h2>
+                        <div class="decorative-line">
+                            <div class="line-left"></div>
+                            <div class="diamond"></div>
+                            <div class="line-right"></div>
+                        </div>
+                    </div>
+
+                    <div class="main-card">
+                        <div class="glow-effect"></div>
+                        <div class="glass-card">
+                            <div class="card-grid">
+                                <div class="text-content">
+                                    <h1>What Is Calligraphy</h1>
+                                    <p>
+                                        Calligraphy is the art of <span class="highlight">elegant</span> and <span
+                                            class="highlight">expressive</span> writing, where each stroke flows
+                                        with
+                                        rhythm and grace.
+                                    </p>
+                                    <p>
+                                        It transforms ordinary words into <span
+                                            class="purple-highlight">captivating</span>, <span
+                                            class="purple-highlight">ornate</span>, and <span
+                                            class="purple-highlight">timeless</span> designs, blending creativity,
+                                        precision, and harmony.
+                                    </p>
+                                    <p>Every letter becomes a work of art, telling a story and leaving a lasting
+                                        impression on anyone who sees it.</p>
+                                    <div class="tags">
+                                        <span>Creativity</span>
+                                        <span>Precision</span>
+                                        <span>Harmony</span>
+                                        <span>Rhythm</span>
+                                    </div>
+                                </div>
+
+                                <div class="visual-elements">
+                                    <div class="circle-wrapper">
+                                        <div class="inner-circle">
+                                            <div class="inner-text">
+                                                <div>
+                                                    <img src="pics/22-removebg-preview.png" alt="" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="orbit-dot amber-dot"></div>
+                                        <div class="orbit-dot purple-dot"></div>
+                                    </div>
+                                    <div class="script-samples">
+                                        <span>ABC</span>
+                                        <span>الخط</span>
+                                        <span>中文</span>
+                                        <span>कला</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom-quote">
+                                <p>
+                                    "From intricate Indic scripts to classic Western styles, calligraphy is a
+                                    masterful
+                                    expression of personal artistry, making every word a work of beauty."
+                                </p>
+                                <div class="quote-decor"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-row">
+                        <div class="stat">
+                            <div class="number">3000+</div>
+                            <div class="label">Years of History</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">50+</div>
+                            <div class="label">Script Styles</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">∞</div>
+                            <div class="label">Possibilities</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">1</div>
+                            <div class="label">Passion</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meaning-section">
+                <div class="meaning-container">
+
+                    <div class="meaning-text-box">
+                        <h1 class="meaning-title">
+                            The MEANING OF <br>
+                            <span class="beauty-highlight">BEAUTY</span>
+                        </h1>
+                        <p class="meaning-desc">
+                            Calligraphy, from the Greeks <span class="greek-word">"kallos"</span> (beauty) and
+                            <span class="greek-word">"graphein"</span> (to write), is more than just writing – it is
+                            a
+                            form of expression that combines creativity, precision, and elegance.
+                        </p>
+                        <div class="etymology-badges">
+                            <div class="greek-badge">
+                                <span class="greek-text">Kallos</span>
+                                <span class="meaning-tag">beauty</span>
+                            </div>
+                            <div class="greek-badge">
+                                <span class="greek-text">graphein</span>
+                                <span class="meaning-tag">to write</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meaning-image-box">
+                        <span class="floating-badge">Inspiration</span>
+                        <div class="image-overlay">
+                            <p class="quote-text">
+                                "Beauty is eternity gazing at itself in a mirror"
+                            </p>
+                            <span class="quote-author">— Kahlil Gibran</span>
+                        </div>
+                        <img src="pics/beautifulimage1.jpg" alt="Calligraphy Art" class="meaning-img">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- History -->
+
+        <section class="container-fluid origins " id="origins-history">
+            <div class="section-header">
+                <h3><span class="section-tag" data-aos="fade-up">History & Heritage</span></h3>
+
+                <h2 class="section-title" data-aos="fade-up">Origins of Calligraphy</h2>
+                <p class="section-subtitle" data-aos="fade-up">Tracing the evolution of writing from ancient
+                    civilizations to modern
+                    artistry</p>
+            </div>
+
+            <div class="origins-grid">
+                <div class="origins-content">
+                    <h3>The Birth of Beautiful Writing</h3>
+                    <p>
+                        Calligraphy, derived from the Greek words "kallos" (beauty) and "graphein" (to write),
+                        represents humanity's earliest attempt to elevate communication into art. The practice
+                        emerged independently across ancient civilizations, from the meticulous brushwork of
+                        Chinese scholars to the flowing Arabic scripts adorning mosques.
+                    </p>
+                    <p>
+                        In ancient China, calligraphy was considered the highest visual art form, surpassing even
+                        painting and sculpture. Master calligraphers were revered as cultural icons, their works
+                        preserved and studied for centuries. Meanwhile, in the Islamic world, calligraphy became
+                        the primary decorative art form, with Arabic script flowing across architectural marvels
+                        and sacred texts.
+                    </p>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-lightbulb"></i> Did You Know?</h4>
+                        <p>The earliest known calligraphy dates back to 2000 BCE in China, while the Dead Sea Scrolls
+                            represent some of the finest examples of ancient Hebrew calligraphy from 150 BCE.</p>
+                    </div>
+
+                    <p>
+                        European calligraphy flourished during the medieval period, with monks in monasteries
+                        creating illuminated manuscripts that combined intricate lettering with gold leaf and
+                        vibrant pigments. The Renaissance brought new scripts like Italic and Roman, which
+                        continue to influence modern typography today.
+                    </p>
+                </div>
+
+                <div class="origins-visual">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2000 BCE</div>
+                            <div class="timeline-title">Chinese Origins</div>
+                            <p>Oracle bone script evolves into sophisticated brush calligraphy
+                                during Shang Dynasty.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">150 BCE</div>
+                            <div class="timeline-title">Hebrew Manuscripts</div>
+                            <p>Dead Sea Scrolls demonstrate advanced Hebrew square script
+                                calligraphy.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">600 CE</div>
+                            <div class="timeline-title">Islamic Golden Age</div>
+                            <p>Arabic calligraphy develops distinct styles: Kufic, Naskh, and
+                                Thuluth.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">800 CE</div>
+                            <div class="timeline-title">Carolingian Renaissance</div>
+                            <p>Charlemagne standardizes European script, leading to Carolingian
+                                minuscule.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1400 CE</div>
+                            <div class="timeline-title">Renaissance Scripts</div>
+                            <p>Humanist minuscule and Italic scripts revolutionize Western
+                                calligraphy.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-title">Digital Renaissance</div>
+                            <p>Modern calligraphy blends traditional techniques with digital
+                                innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Caligraphy types  -->
+
+        <section id="calligraphy">
+            <!-- TRADITIONS SECTION -->
+            <section class="traditions-section" id="traditions">
+                <div class="section-header">
+                    <h3> <span class="section-tag" data-aos="fade-up">Choose Your Path</span></h3>
+                    <h2 class="section-title" data-aos="fade-up">Calligraphy Traditions</h2>
+                    <p data-aos="fade-up">Click on any tradition to explore child and adult programs</p>
+                </div>
+
+                <div class="tradition-cards">
+                    <!-- Western Card -->
+                    <div class="tradition-card" onclick="showTraditionDetail('western')">
+                        <div class="tradition-header western-header">
+                            <div class="tradition-symbol">Aa</div>
+                        </div>
+                        <div class="tradition-body">
+                            <h3 class="tradition-name">Western Calligraphy</h3>
+                            <p class="tradition-origin">Europe & Americas • Latin Scripts</p>
+                            <p class="tradition-description">
+                                From medieval manuscripts to modern wedding invitations.
+                                Features Copperplate, Italic, Gothic Blackletter, and Spencerian scripts.
+                            </p>
+                            <div class="category-tags">
+                                <span class="category-tag">Copperplate</span>
+                                <span class="category-tag">Italic</span>
+                                <span class="category-tag">Gothic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arabic Card -->
+                    <div class="tradition-card" onclick="showTraditionDetail('arabic')">
+                        <div class="tradition-header arabic-header">
+                            <div class="tradition-symbol">خط</div>
+                        </div>
+                        <div class="tradition-body">
+                            <h3 class="tradition-name">Arabic Calligraphy</h3>
+                            <p class="tradition-origin">Middle East • Islamic Golden Age</p>
+                            <p class="tradition-description">
+                                The highest art form in Islamic culture. Features flowing geometric scripts
+                                including Naskh, Thuluth, Diwani, and Kufic styles.
+                            </p>
+                            <div class="category-tags">
+                                <span class="category-tag">Naskh</span>
+                                <span class="category-tag">Thuluth</span>
+                                <span class="category-tag">Diwani</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oriental Card -->
+                    <div class="tradition-card" onclick="showTraditionDetail('oriental')">
+                        <div class="tradition-header oriental-header">
+                            <div class="tradition-symbol">書</div>
+                        </div>
+                        <div class="tradition-body">
+                            <h3 class="tradition-name">Oriental Calligraphy</h3>
+                            <p class="tradition-origin">East Asia • China, Japan, Korea</p>
+                            <p class="tradition-description">
+                                Brush-based art emphasizing qi (energy) and mindfulness.
+                                Includes Chinese (Shufa), Japanese (Shodo), and Korean (Seoye) traditions.
+                            </p>
+                            <div class="category-tags">
+                                <span class="category-tag">Kaishu</span>
+                                <span class="category-tag">Shodo</span>
+                                <span class="category-tag">Brush</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Indic Card -->
+                    <div class="tradition-card" onclick="showTraditionDetail('indic')">
+                        <div class="tradition-header indic-header">
+                            <div class="tradition-symbol">ॐ</div>
+                        </div>
+                        <div class="tradition-body">
+                            <h3 class="tradition-name">Indic Calligraphy</h3>
+                            <p class="tradition-origin">South Asia • India, Nepal, Tibet</p>
+                            <p class="tradition-description">
+                                Sacred scripts including Devanagari, Sanskrit, and Tibetan. Used in religious texts,
+                                mantras, and spiritual art for thousands of years.
+                            </p>
+                            <div class="category-tags">
+                                <span class="category-tag">Devanagari</span>
+                                <span class="category-tag">Sanskrit</span>
+                                <span class="category-tag">Tibetan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Greek Card -->
+                    <div class="tradition-card" onclick="showTraditionDetail('greek')">
+                        <div class="tradition-header greek-header">
+                            <div class="tradition-symbol">Ω</div>
+                        </div>
+                        <div class="tradition-body">
+                            <h3 class="tradition-name">Greek Calligraphy</h3>
+                            <p class="tradition-origin">Mediterranean • Ancient Greece</p>
+                            <p class="tradition-description">
+                                The foundation of Western alphabets. From ancient epigraphy to Byzantine manuscripts,
+                                featuring Uncial, Minuscule, and modern Greek scripts.
+                            </p>
+                            <div class="category-tags">
+                                <span class="category-tag">Uncial</span>
+                                <span class="category-tag">Byzantine</span>
+                                <span class="category-tag">Classical</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hebrew Card -->
+                    <div class="tradition-card" onclick="showTraditionDetail('hebrew')">
+                        <div class="tradition-header hebrew-header">
+                            <div class="tradition-symbol">א</div>
+                        </div>
+                        <div class="tradition-body">
+                            <h3 class="tradition-name">Hebrew Calligraphy</h3>
+                            <p class="tradition-origin">Middle East • Jewish Tradition</p>
+                            <p class="tradition-description">
+                                Sacred Jewish art form used in Torah scrolls, ketubot, and ceremonial documents.
+                                Features Ashkenazi, Sephardic, and modern Israeli styles.
+                            </p>
+                            <div class="category-tags">
+                                <span class="category-tag">Ktav Ashuri</span>
+                                <span class="category-tag">Stam</span>
+                                <span class="category-tag">Modern</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cyrillic Card -->
+                    <div class="tradition-card" onclick="showTraditionDetail('cyrillic')">
+                        <div class="tradition-header cyrillic-header">
+                            <div class="tradition-symbol">Я</div>
+                        </div>
+                        <div class="tradition-body">
+                            <h3 class="tradition-name">Cyrillic Calligraphy</h3>
+                            <p class="tradition-origin">Eastern Europe • Russia, Slavic Nations</p>
+                            <p class="tradition-description">
+                                From ancient Church Slavonic manuscripts to Soviet-era typography.
+                                Features Vyaz, poluustav, and modern Russian calligraphic arts.
+                            </p>
+                            <div class="category-tags">
+                                <span class="category-tag">Vyaz</span>
+                                <span class="category-tag">Church Slavonic</span>
+                                <span class="category-tag">Modern</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WESTERN DETAIL SECTION -->
+            <section id="western-detail" class="detail-section">
+                <div class="container">
+                    <a class="back-btn" onclick="showSection('traditions')">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Traditions
+                    </a>
+
+                    <div class="detail-grid">
+                        <div class="detail-content">
+                            <h2><i class="fa-solid fa-feather-pointed"></i> Western Calligraphy</h2>
+                            <div class="tradition-image">
+                                <img src="pics/western1.png" alt="Copperplate Calligraphy Alphabet">
+
+                            </div>
+                            <div class="tradition-image-small">
+                                <img src="pics/western2.jpg" alt="">
+                                <img src="pics/western3.jpeg" alt="">
+                            </div>
+                            <p>
+                                Western calligraphy encompasses the rich tradition of Latin script writing that evolved
+                                from Roman inscriptions through medieval monasteries to the modern day. It includes
+                                styles
+                                ranging from the angular Gothic Blackletter to the flowing elegance of Copperplate.
+                            </p>
+                            <p>
+                                The tradition emphasizes precise pen angles, consistent letterforms, and harmonious
+                                spacing. Whether using broad-edge pens for Italic or pointed pens for Spencerian,
+                                Western
+                                calligraphy offers a structured approach to beautiful writing.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> Historical scripts from 1st century Rome to
+                                    present</li>
+                                <li><i class="fa-solid fa-check"></i> Broad-edge and pointed pen techniques</li>
+                                <li><i class="fa-solid fa-check"></i> Perfect for formal events and certificates</li>
+                                <li><i class="fa-solid fa-check"></i> Foundation for modern typography</li>
+                            </ul>
+
+                            <div class="script-showcase">
+                                <div class="script-tabs">
+                                    <button class="script-tab active"
+                                        onclick="showScript('copperplate', event)">Copperplate</button>
+                                    <button class="script-tab" onclick="showScript('italic', event)">Italic</button>
+                                    <button class="script-tab" onclick="showScript('gothic', event)">Gothic</button>
+                                </div>
+                                <div id="copperplate" class="script-content active">
+                                    <div class="script-sample" style="font-family: 'Great Vibes', cursive;">Aa Bb Cc
+                                    </div>
+                                    <p>English Roundhand with dramatic thick-thin contrast. Perfect for formal
+                                        invitations.</p>
+                                </div>
+                                <div id="italic" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Cormorant Garamond', serif; font-style: italic;">Aa Bb Cc
+                                    </div>
+                                    <p>Renaissance script with rightward slant. Foundation for modern handwriting.</p>
+                                </div>
+                                <div id="gothic" class="script-content">
+                                    <div class="script-sample" style="font-family: 'Cinzel', serif; font-weight: 900;">
+                                        Aa Bb Cc</div>
+                                    <p>Medieval Blackletter with angular, dense letterforms. Used in early printing.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-categories">
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-child"></i></div>
+                                <h3 class="age-title">Children's Program</h3>
+                                <p class="age-subtitle">Ages 6-12 • Foundation Level</p>
+                                <p class="age-description">
+                                    Fun introduction to letterforms using colorful markers and pencils.
+                                    Builds motor skills and artistic confidence.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Basic stroke patterns</li>
+                                    <li><i class="fa-solid fa-star"></i> Simple Italic letters</li>
+                                    <li><i class="fa-solid fa-star"></i> Creative projects</li>
+                                    <li><i class="fa-solid fa-star"></i> No sharp tools</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Western Kids...')">Enroll Now</a>
+                            </div>
+
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <h3 class="age-title">Adult Mastery</h3>
+                                <p class="age-subtitle">Ages 13+ • All Levels</p>
+                                <p class="age-description">
+                                    Comprehensive study of historical scripts with professional tools.
+                                    From beginner foundations to advanced Copperplate.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Pointed & broad-edge pens</li>
+                                    <li><i class="fa-solid fa-star"></i> Copperplate & Spencerian</li>
+                                    <li><i class="fa-solid fa-star"></i> Illumination techniques</li>
+                                    <li><i class="fa-solid fa-star"></i> Professional certification</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Western Adults...')">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ARABIC DETAIL SECTION -->
+            <section id="arabic-detail" class="detail-section">
+                <div class="container">
+                    <a class="back-btn" onclick="showSection('traditions')">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Traditions
+                    </a>
+
+                    <div class="detail-grid">
+                        <div class="detail-content">
+                            <h2><i class="fa-solid fa-star-and-crescent"></i> Arabic Calligraphy</h2>
+                            <div class="tradition-image">
+                                <img src="pics/arabic1.jpg" alt="Arabic Thuluth Calligraphy">
+                            </div>
+                            <div class="tradition-image-small">
+                                <img src="pics/arabic2.jpeg" alt="Image not found">
+                                <img src="pics/arabic3.jpeg" alt="Image not found">
+                            </div>
+                            <p>
+                                Arabic calligraphy is considered the highest art form in Islamic culture, where the
+                                prohibition of figurative art led to the elevation of script to supreme artistic
+                                expression.
+                                The flowing, geometric nature of Arabic letters creates infinite decorative
+                                possibilities.
+                            </p>
+                            <p>
+                                Each script (Naskh, Thuluth, Diwani, Kufic) has specific proportional rules and
+                                traditional uses,
+                                from Quranic manuscripts to architectural inscriptions. The art requires understanding
+                                of
+                                Arabic letters' contextual forms and intricate composition principles.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> 1400+ years of continuous tradition</li>
+                                <li><i class="fa-solid fa-check"></i> Geometric proportion systems (Al-Khatt)</li>
+                                <li><i class="fa-solid fa-check"></i> Sacred art form in Islamic culture</li>
+                                <li><i class="fa-solid fa-check"></i> Used in architecture worldwide</li>
+                            </ul>
+
+                            <div class="script-showcase">
+                                <div class="script-tabs">
+                                    <button class="script-tab active"
+                                        onclick="showScript('naskh', event)">Naskh</button>
+                                    <button class="script-tab" onclick="showScript('thuluth', event)">Thuluth</button>
+                                    <button class="script-tab" onclick="showScript('diwani', event)">Diwani</button>
+                                </div>
+
+                                <div id="naskh" class="script-content active">
+                                    <div class="script-sample" style="font-family: 'Amiri', serif;">النَّسْخ</div>
+                                    <p>Clear, readable script used for Quran printing. Most widely used Arabic script.
+                                    </p>
+                                </div>
+                                <div id="thuluth" class="script-content">
+                                    <div class="script-sample" style="font-family: 'Amiri', serif; font-size: 2.5rem;">
+                                        الثُّلُث</div>
+                                    <p>Monumental script with tall verticals. Used for mosque decorations and titles.
+                                    </p>
+                                </div>
+                                <div id="diwani" class="script-content">
+                                    <div class="script-sample" style="font-family: 'Amiri', serif; font-style: italic;">
+                                        الديواني</div>
+                                    <p>Ottoman court script with dense, flowing letters. Highly decorative and complex.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-categories">
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-child"></i></div>
+                                <h3 class="age-title">Children's Program</h3>
+                                <p class="age-subtitle">Ages 6-12 • Foundation Level</p>
+                                <p class="age-description">
+                                    Introduction to Arabic letterforms through geometric patterns and colorful inks.
+                                    Respectful approach to sacred art.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Arabic alphabet basics</li>
+                                    <li><i class="fa-solid fa-star"></i> Simple Kufic geometry</li>
+                                    <li><i class="fa-solid fa-star"></i> Decorative patterns</li>
+                                    <li><i class="fa-solid fa-star"></i> Cultural appreciation</li>
+                                </ul>
+                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Arabic Kids...')">Enroll
+                                    Now</a>
+                            </div>
+
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <h3 class="age-title">Adult Mastery</h3>
+                                <p class="age-subtitle">Ages 13+ • All Levels</p>
+                                <p class="age-description">
+                                    Traditional master-apprentice method learning classical scripts.
+                                    Study of proportions, composition, and reed pen (qalam) techniques.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Six classical scripts (Aqlam)</li>
+                                    <li><i class="fa-solid fa-star"></i> Reed pen preparation</li>
+                                    <li><i class="fa-solid fa-star"></i> Composition (Tashkeel)</li>
+                                    <li><i class="fa-solid fa-star"></i> Ijaza certification</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Arabic Adults...')">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ORIENTAL DETAIL SECTION -->
+            <section id="oriental-detail" class="detail-section">
+                <div class="container">
+                    <a class="back-btn" onclick="showSection('traditions')">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Traditions
+                    </a>
+
+                    <div class="detail-grid">
+                        <div class="detail-content">
+                            <h2><i class="fa-solid fa-yin-yang"></i> Oriental Calligraphy</h2>
+                            <div class="tradition-image">
+                                <img src="pics/oriental1.webp" alt="Japanese Shodo Calligraphy">
+                            </div>
+                            <div class="tradition-image-small">
+                                <img src="pics/oriental2.jpg" alt="Image not found">
+                                <img src="pics/oriental3.avif" alt="Image not found">
+                            </div>
+
+
+                            <p>
+                                East Asian calligraphy (Shufa/Shodo/Seoye) is a meditative art form practiced with brush
+                                and ink on absorbent paper. Unlike Western traditions, it emphasizes the expression of
+                                qi (life energy) through spontaneous, mindful brush movements.
+                            </p>
+                            <p>
+                                The tradition encompasses Chinese, Japanese, and Korean styles, each with distinct
+                                characteristics but shared philosophical roots in Confucianism, Taoism, and Buddhism.
+                                The "Four Treasures of the Study" (brush, ink, paper, inkstone) are essential tools.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> 3000+ year continuous tradition</li>
+                                <li><i class="fa-solid fa-check"></i> Mindfulness & meditation practice</li>
+                                <li><i class="fa-solid fa-check"></i> Five major script types</li>
+                                <li><i class="fa-solid fa-check"></i> Connected to martial arts & tea ceremony</li>
+                            </ul>
+
+                            <div class="script-showcase">
+                                <div class="script-tabs">
+                                    <button class="script-tab active"
+                                        onclick="showScript('kaishu', event)">Kaishu</button>
+                                    <button class="script-tab" onclick="showScript('xingshu', event)">Xingshu</button>
+                                    <button class="script-tab" onclick="showScript('caoshu', event)">Caoshu</button>
+                                </div>
+
+                                <div id="kaishu" class="script-content active">
+                                    <div class="script-sample" style="font-size: 3.5rem;">楷書</div>
+                                    <p>Regular script - the standard form. Each stroke distinct and precisely placed.
+                                    </p>
+                                </div>
+                                <div id="xingshu" class="script-content">
+                                    <div class="script-sample" style="font-size: 3.5rem; font-style: italic;">行書</div>
+                                    <p>Running script - semi-cursive with connected strokes. Balance of speed and
+                                        clarity.</p>
+                                </div>
+                                <div id="caoshu" class="script-content">
+                                    <div class="script-sample" style="font-size: 3.5rem;">草書</div>
+                                    <p>Cursive script - highly abstract and expressive. Requires mastery of standard
+                                        forms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-categories">
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-child"></i></div>
+                                <h3 class="age-title">Children's Program</h3>
+                                <p class="age-subtitle">Ages 6-12 • Foundation Level</p>
+                                <p class="age-description">
+                                    Introduction to brush handling through fun exercises. Emphasis on posture,
+                                    breathing, and basic stroke order.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Basic brush holding</li>
+                                    <li><i class="fa-solid fa-star"></i> "Eternity" character practice</li>
+                                    <li><i class="fa-solid fa-star"></i> Ink wash painting basics</li>
+                                    <li><i class="fa-solid fa-star"></i> Mindfulness games</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Oriental Kids...')">Enroll Now</a>
+                            </div>
+
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <h3 class="age-title">Adult Mastery</h3>
+                                <p class="age-subtitle">Ages 13+ • All Levels</p>
+                                <p class="age-description">
+                                    Comprehensive study of brush techniques and philosophical foundations.
+                                    From standard script mastery to personal expression.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Five script types (Seal to Cursive)</li>
+                                    <li><i class="fa-solid fa-star"></i> Brush & ink preparation</li>
+                                    <li><i class="fa-solid fa-star"></i> Copying masterpieces (Rinsho)</li>
+                                    <li><i class="fa-solid fa-star"></i> Personal style development</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Oriental Adults...')">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INDIC DETAIL SECTION -->
+            <section id="indic-detail" class="detail-section">
+                <div class="container">
+                    <a class="back-btn" onclick="showSection('traditions')">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Traditions
+                    </a>
+
+                    <div class="detail-grid">
+                        <div class="detail-content">
+                            <h2><i class="fa-solid fa-om"></i> Indic Calligraphy</h2>
+                            <div class="tradition-image">
+                                <img src="pics/indic1.jpg" alt="Devanagari Sanskrit Calligraphy">
+                            </div>
+                            <div class="tradition-image-small">
+                                <img src="pics/indic2.jpg" alt="Image not found">
+                                <img src="pics/indic3.jpg" alt="Image not found">
+                            </div>
+                            <p>
+                                Indic calligraphy represents the sacred writing systems of the Indian subcontinent,
+                                including
+                                Devanagari (used for Sanskrit, Hindi, and Marathi), Bengali, Tamil, and Tibetan scripts.
+                                These scripts have been used to preserve religious texts, mantras, and spiritual
+                                teachings for millennia.
+                            </p>
+                            <p>
+                                The tradition emphasizes the divine nature of sound and form, where each letter (aksara)
+                                is believed
+                                to carry spiritual energy. Tibetan calligraphy, in particular, is considered a
+                                meditation practice,
+                                with monks spending years perfecting the precise forms of sacred syllables.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> 3500+ year tradition from Brahmi script</li>
+                                <li><i class="fa-solid fa-check"></i> Used in Hindu, Buddhist, and Jain sacred texts
+                                </li>
+                                <li><i class="fa-solid fa-check"></i> Connection to mantra and meditation</li>
+                                <li><i class="fa-solid fa-check"></i> Regional variations across South Asia</li>
+                            </ul>
+
+                            <div class="script-showcase">
+                                <div class="script-tabs">
+                                    <button class="script-tab active"
+                                        onclick="showScript('devanagari', event)">Devanagari</button>
+                                    <button class="script-tab" onclick="showScript('tibetan', event)">Tibetan</button>
+                                    <button class="script-tab" onclick="showScript('bengali', event)">Bengali</button>
+                                </div>
+
+                                <div id="devanagari" class="script-content active">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif Devanagari', serif; font-size: 3rem;">देवनागरी
+                                    </div>
+                                    <p>Sacred script for Sanskrit and Hindi. Characterized by the horizontal top line
+                                        (shirorekha).</p>
+                                </div>
+                                <div id="tibetan" class="script-content">
+                                    <div class="script-sample" style="font-size: 2.5rem;">བོད་སྐད་</div>
+                                    <p>Uchen script with vertical emphasis. Used in Buddhist texts and mantras.</p>
+                                </div>
+                                <div id="bengali" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif Bengali', serif; font-size: 3rem;">বাংলা</div>
+                                    <p>Flowing script with rounded characters. Used for Bengali, Assamese, and Manipuri.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-categories">
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-child"></i></div>
+                                <h3 class="age-title">Children's Program</h3>
+                                <p class="age-subtitle">Ages 6-12 • Foundation Level</p>
+                                <p class="age-description">
+                                    Introduction to sacred scripts through colorful art and simple mantras.
+                                    Cultural stories and creative expression.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Sanskrit alphabet basics</li>
+                                    <li><i class="fa-solid fa-star"></i> Simple mantra writing</li>
+                                    <li><i class="fa-solid fa-star"></i> Festival art projects</li>
+                                    <li><i class="fa-solid fa-star"></i> Cultural storytelling</li>
+                                </ul>
+                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Indic Kids...')">Enroll
+                                    Now</a>
+                            </div>
+
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <h3 class="age-title">Adult Mastery</h3>
+                                <p class="age-subtitle">Ages 13+ • All Levels</p>
+                                <p class="age-description">
+                                    Deep study of classical scripts with traditional tools.
+                                    From basic letterforms to complex compositions.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Devanagari & Tibetan scripts</li>
+                                    <li><i class="fa-solid fa-star"></i> Bamboo pen (kalam) techniques</li>
+                                    <li><i class="fa-solid fa-star"></i> Sacred text copying</li>
+                                    <li><i class="fa-solid fa-star"></i> Spiritual calligraphy practice</li>
+                                </ul>
+                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Indic Adults...')">Start
+                                    Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GREEK DETAIL SECTION -->
+            <section id="greek-detail" class="detail-section">
+                <div class="container">
+                    <a class="back-btn" onclick="showSection('traditions')">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Traditions
+                    </a>
+
+                    <div class="detail-grid">
+                        <div class="detail-content">
+                            <h2><i class="fa-solid fa-landmark"></i> Greek Calligraphy</h2>
+                            <div class="tradition-image">
+                                <img src="pics/greek1.jpg" alt="Ancient Greek Manuscript Calligraphy">
+                            </div>
+                            <div class="tradition-image-small">
+                                <img src="pics/greek2.jpg" alt="Image not found">
+                                <img src="pics/greek3.jpg" alt="Image not found">
+                            </div>
+                            <p>
+                                Greek calligraphy spans over 2,500 years of continuous evolution, from the elegant
+                                epigraphy
+                                of ancient Athens to the magnificent Byzantine manuscripts that preserved classical
+                                knowledge
+                                through the Middle Ages. The Greek alphabet became the foundation for Western writing
+                                systems.
+                            </p>
+                            <p>
+                                Byzantine monks developed the Uncial and Minuscule scripts that influenced all
+                                subsequent European
+                                writing. Modern Greek calligraphy continues this tradition, blending ancient forms with
+                                contemporary
+                                artistic expression in both religious and secular contexts.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> Foundation of Western alphabets</li>
+                                <li><i class="fa-solid fa-check"></i> Byzantine manuscript tradition</li>
+                                <li><i class="fa-solid fa-check"></i> Uncial, Minuscule, and modern styles</li>
+                                <li><i class="fa-solid fa-check"></i> Mathematical and scientific notation</li>
+                            </ul>
+
+                            <div class="script-showcase">
+                                <div class="script-tabs">
+                                    <button class="script-tab active"
+                                        onclick="showScript('uncial', event)">Uncial</button>
+                                    <button class="script-tab"
+                                        onclick="showScript('byzantine', event)">Byzantine</button>
+                                    <button class="script-tab"
+                                        onclick="showScript('modern-greek', event)">Modern</button>
+                                </div>
+
+                                <div id="uncial" class="script-content active">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif', serif; font-size: 2.5rem; font-style: italic;">
+                                        Αα Ββ Γγ</div>
+                                    <p>Ancient rounded majuscule script used in early Christian manuscripts (4th-8th
+                                        centuries).</p>
+                                </div>
+                                <div id="byzantine" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif', serif; font-size: 2.5rem;">Βυζάντιο</div>
+                                    <p>Minuscule cursive developed in Constantinople. Highly legible and elegant.</p>
+                                </div>
+                                <div id="modern-greek" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Sans', sans-serif; font-size: 2.5rem;">Ελληνικά</div>
+                                    <p>Contemporary Greek handwriting with flowing connections and artistic flair.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-categories">
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-child"></i></div>
+                                <h3 class="age-title">Children's Program</h3>
+                                <p class="age-subtitle">Ages 6-12 • Foundation Level</p>
+                                <p class="age-description">
+                                    Mythology-inspired introduction to Greek letters. Games, stories, and creative
+                                    projects
+                                    bring ancient civilization to life.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Greek alphabet basics</li>
+                                    <li><i class="fa-solid fa-star"></i> Mythological themes</li>
+                                    <li><i class="fa-solid fa-star"></i> Ancient Greek art</li>
+                                    <li><i class="fa-solid fa-star"></i> Mathematical symbols</li>
+                                </ul>
+                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Greek Kids...')">Enroll
+                                    Now</a>
+                            </div>
+
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <h3 class="age-title">Adult Mastery</h3>
+                                <p class="age-subtitle">Ages 13+ • All Levels</p>
+                                <p class="age-description">
+                                    Comprehensive study from ancient epigraphy to Byzantine manuscripts.
+                                    Historical context and technical mastery.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Ancient & Byzantine scripts</li>
+                                    <li><i class="fa-solid fa-star"></i> Reed pen techniques</li>
+                                    <li><i class="fa-solid fa-star"></i> Manuscript illumination</li>
+                                    <li><i class="fa-solid fa-star"></i> Classical text copying</li>
+                                </ul>
+                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Greek Adults...')">Start
+                                    Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HEBREW DETAIL SECTION -->
+            <section id="hebrew-detail" class="detail-section">
+                <div class="container">
+                    <a class="back-btn" onclick="showSection('traditions')">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Traditions
+                    </a>
+
+                    <div class="detail-grid">
+                        <div class="detail-content">
+                            <h2><i class="fa-solid fa-star-of-david"></i> Hebrew Calligraphy</h2>
+                            <div class="tradition-image">
+                                <img src="pics/hebrew1.jpg" alt="Hebrew Calligraphy Art">
+                            </div>
+                            <div class="tradition-image-small">
+                                <img src="pics/hebrew2.jpg" alt="Image not found">
+                                <img src="pics/hebrew3.jpg" alt="Image not found">
+                            </div>
+                            <p>
+                                Hebrew calligraphy (Ktav) is a sacred Jewish art form with strict rules governing the
+                                writing
+                                of religious texts. Soferim (scribes) undergo years of training to write Torah scrolls,
+                                mezuzot,
+                                and tefillin with perfect precision, as even one incorrect letter can invalidate the
+                                entire text.
+                            </p>
+                            <p>
+                                Beyond the sacred STAM (Torah, Nevi'im, Ketuvim) scripts, Hebrew calligraphy encompasses
+                                decorative
+                                forms for ketubot (marriage contracts), haggadot, and artistic expression. The flowing
+                                curves and
+                                geometric precision create distinctive visual beauty.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> 3000+ year unbroken tradition</li>
+                                <li><i class="fa-solid fa-check"></i> Sacred rules for Torah writing</li>
+                                <li><i class="fa-solid fa-check"></i> Ktav Ashuri and Ktav Ivri styles</li>
+                                <li><i class="fa-solid fa-check"></i> Ceremonial and artistic applications</li>
+                            </ul>
+
+                            <div class="script-showcase">
+                                <div class="script-tabs">
+                                    <button class="script-tab active" onclick="showScript('stam', event)">Stam</button>
+                                    <button class="script-tab"
+                                        onclick="showScript('ashkenazi', event)">Ashkenazi</button>
+                                    <button class="script-tab"
+                                        onclick="showScript('sephardic', event)">Sephardic</button>
+                                </div>
+
+                                <div id="stam" class="script-content active">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif Hebrew', serif; font-size: 2.5rem;">כתב</div>
+                                    <p>Sacred script for Torah, mezuzah, and tefillin. Strict geometric precision
+                                        required.</p>
+                                </div>
+                                <div id="ashkenazi" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif Hebrew', serif; font-size: 2.5rem;">אשכנזי</div>
+                                    <p>Central European style with distinctive tagin (crownlets) on specific letters.
+                                    </p>
+                                </div>
+                                <div id="sephardic" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif Hebrew', serif; font-size: 2.5rem;">ספרדי</div>
+                                    <p>Mediterranean and Middle Eastern style with flowing, rounded forms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-categories">
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-child"></i></div>
+                                <h3 class="age-title">Children's Program</h3>
+                                <p class="age-subtitle">Ages 6-12 • Foundation Level</p>
+                                <p class="age-description">
+                                    Introduction to Hebrew letters through Jewish holidays and traditions.
+                                    Creative projects and cultural learning.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Aleph-Bet basics</li>
+                                    <li><i class="fa-solid fa-star"></i> Holiday art projects</li>
+                                    <li><i class="fa-solid fa-star"></i> Hebrew name writing</li>
+                                    <li><i class="fa-solid fa-star"></i> Biblical stories</li>
+                                </ul>
+                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Hebrew Kids...')">Enroll
+                                    Now</a>
+                            </div>
+
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <h3 class="age-title">Adult Mastery</h3>
+                                <p class="age-subtitle">Ages 13+ • All Levels</p>
+                                <p class="age-description">
+                                    Study of traditional scripts for religious and artistic purposes.
+                                    From basic letterforms to sacred writing laws.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Ktav Ashuri mastery</li>
+                                    <li><i class="fa-solid fa-star"></i> Quill (kulmus) preparation</li>
+                                    <li><i class="fa-solid fa-star"></i> Ketubah design</li>
+                                    <li><i class="fa-solid fa-star"></i> Sofer certification prep</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Hebrew Adults...')">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CYRILLIC DETAIL SECTION -->
+            <section id="cyrillic-detail" class="detail-section">
+                <div class="container">
+                    <a class="back-btn" onclick="showSection('traditions')">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Traditions
+                    </a>
+
+                    <div class="detail-grid">
+                        <div class="detail-content">
+                            <h2><i class="fa-solid fa-cathedral"></i> Cyrillic Calligraphy</h2>
+                            <div class="tradition-image">
+                                <img src="pics/CYRILLIC1.jpg" alt="Old Russian Cyrillic Calligraphy">
+                            </div>
+                            <div class="tradition-image-small">
+                                <img src="pics/CYRILLIC2.jpg" alt="Image not found">
+                                <img src="pics/CYRILLIC3.jpg" alt="Image not found">
+                            </div>
+                            <p>
+                                Cyrillic calligraphy emerged in the 9th century for Slavic Christian liturgy, evolving
+                                from
+                                Greek Uncial through Glagolitic. Old Church Slavonic manuscripts represent some of
+                                Europe's
+                                most ornate medieval calligraphy, featuring the distinctive Vyaz (interlaced lettering)
+                                used
+                                in Russian Orthodox texts.
+                            </p>
+                            <p>
+                                The tradition encompasses Ukrainian, Serbian, Bulgarian, and Russian variants, each with
+                                unique
+                                characteristics. From ancient poluustav to Soviet-era constructivist lettering, Cyrillic
+                                calligraphy reflects the rich cultural history of Eastern Europe.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> 1100+ year Slavic tradition</li>
+                                <li><i class="fa-solid fa-check"></i> Old Church Slavonic manuscripts</li>
+                                <li><i class="fa-solid fa-check"></i> Vyaz ornamental lettering</li>
+                                <li><i class="fa-solid fa-check"></i> Modern Russian cursive arts</li>
+                            </ul>
+
+                            <div class="script-showcase">
+                                <div class="script-tabs">
+                                    <button class="script-tab active" onclick="showScript('vyaz', event)">Vyaz</button>
+                                    <button class="script-tab"
+                                        onclick="showScript('poluustav', event)">Poluustav</button>
+                                    <button class="script-tab"
+                                        onclick="showScript('modern-cyrillic', event)">Modern</button>
+                                </div>
+
+                                <div id="vyaz" class="script-content active">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif', serif; font-weight: bold; font-size: 2.5rem; letter-spacing: -2px;">
+                                        ВЯЗЬ</div>
+                                    <p>Condensed ornamental script where letters interlace vertically. Used in church
+                                        books.</p>
+                                </div>
+                                <div id="poluustav" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Serif', serif; font-size: 2.5rem;">Полуустав</div>
+                                    <p>Semi-uncial used in 14th-17th century Russia. Compact and highly legible.</p>
+                                </div>
+                                <div id="modern-cyrillic" class="script-content">
+                                    <div class="script-sample"
+                                        style="font-family: 'Noto Sans', sans-serif; font-size: 2.5rem;">Каллиграфия
+                                    </div>
+                                    <p>Contemporary Russian cursive with flowing connections and artistic variations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="age-categories">
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-child"></i></div>
+                                <h3 class="age-title">Children's Program</h3>
+                                <p class="age-subtitle">Ages 6-12 • Foundation Level</p>
+                                <p class="age-description">
+                                    Introduction to Cyrillic through Russian fairy tales and folk art.
+                                    Matryoshka and Fabergé-inspired projects.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Cyrillic alphabet basics</li>
+                                    <li><i class="fa-solid fa-star"></i> Russian folk patterns</li>
+                                    <li><i class="fa-solid fa-star"></i> Icon border designs</li>
+                                    <li><i class="fa-solid fa-star"></i> Cultural crafts</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Cyrillic Kids...')">Enroll Now</a>
+                            </div>
+
+                            <div class="age-card">
+                                <div class="age-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <h3 class="age-title">Adult Mastery</h3>
+                                <p class="age-subtitle">Ages 13+ • All Levels</p>
+                                <p class="age-description">
+                                    Study of historical Slavic scripts and modern Russian calligraphy.
+                                    From medieval manuscripts to contemporary design.
+                                </p>
+                                <ul class="age-features">
+                                    <li><i class="fa-solid fa-star"></i> Church Slavonic scripts</li>
+                                    <li><i class="fa-solid fa-star"></i> Vyaz composition</li>
+                                    <li><i class="fa-solid fa-star"></i> Reed pen techniques</li>
+                                    <li><i class="fa-solid fa-star"></i> Iconography integration</li>
+                                </ul>
+                                <a href="#" class="enroll-btn"
+                                    onclick="showToast('Enrolling in Cyrillic Adults...')">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="toast" id="toast">Action completed successfully!</div>
+        </section>
+
+
+        <!-- Catogries for kids and adults  -->
+        <section class="kids-category" id="adult-kid-section">
+
+            <div class="change-button-wrapper">
+                <button class="change-button-btn active" onclick="switchToKids()" id="kidsBtn">For Child</button>
+                <button class="change-button-btn" onclick="switchToAdults()" id="adultsBtn">For Adult</button>
+            </div>
+
+            <!-- KIDS SECTION -->
+            <div id="kids-content" class="section-content active">
+
+                <div class="kids-hero-wrapper">
+                    <div class="kids-hero-inner">
+                        <span class="kids-badge">🎨 Creative Learning</span>
+                        <h1>Calligraphy Fun for Kids!</h1>
+                        <p class="kids-subtitle">Learn to write beautifully with engaging activities designed for young
+                            artists</p>
+                        <button class="kids-cta-btn">
+                            <a href="#kids-activities">Start Beautiful Journey <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </button>
+                    </div>
+                    <div class="kids-floating-decor">
+                        <div class="kids-float-shape float-1">✨</div>
+                        <div class="kids-float-shape float-2">🖋️</div>
+                        <div class="kids-float-shape float-3">🌟</div>
+                    </div>
+                </div>
+
+                <div class="kids-intro-section">
+                    <div class="kids-intro-box">
+                        <div class="kids-icon-wrap">
+                            <img src="pics/kidssection1.jpg" alt="Sunshine Icon">
+                        </div>
+                        <div class="kids-intro-text">
+                            <h2>Why Calligraphy for Kids?</h2>
+                            <p>Calligraphy isn't just for grown-ups—it's a magical way for children to express
+                                creativity, develop fine motor skills, and discover the art of beautiful writing through
+                                play!</p>
+                            <div class="kids-benefits">
+                                <span class="benefit-tag">🎯 Improves Focus</span>
+                                <span class="benefit-tag">🧠 Boosts Creativity</span>
+                                <span class="benefit-tag">✍️ Better Handwriting</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <section class="kids-tools-section">
+                        <div class="kids-container">
+                            <div class="kids-activity-heading">
+                                <span class="section-tag">🎨 Creative Tools</span>
+                                <h2>Tools for Kids</h2>
+                                <p class="section-desc">Everything you need to start your calligraphy journey</p>
+                            </div>
+
+                            <div class="kids-activity-grid" id="kids-activities">
+                                <article class="kids-activity-card">
+                                    <div class="kids-card-img-wrap">
+                                        <img src="pics/kidspentool1.avif" alt="Calligraphy Pencil">
+                                        <div class="card-overlay">
+                                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="kids-card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </div>
+                                        <h3>Calligraphy Pencils</h3>
+                                        <p>Start with high-quality pencils designed for perfect letter formation and
+                                            comfortable grip for small hands</p>
+                                        <div class="tool-features">
+                                            <span class="feature-dot"></span>
+                                            <span>Easy Grip</span>
+                                        </div>
+                                        <button class="kids-action-btn">
+                                            Explore Pencils <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </article>
+
+                                <article class="kids-activity-card featured">
+                                    <div class="kids-card-img-wrap">
+                                        <img src="pics/kidspentool2.avif" alt="Brush Pens">
+                                        <div class="card-overlay">
+                                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="kids-card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-pen-nib"></i>
+                                        </div>
+                                        <h3>Brush Pens</h3>
+                                        <p>Dual-tip brush pens that make creating thick and thin strokes effortless and
+                                            fun for young artists</p>
+                                        <div class="tool-features">
+                                            <span class="feature-dot active"></span>
+                                            <span>Dual Tip</span>
+                                        </div>
+                                        <button class="kids-action-btn">
+                                            Try Brush Pens <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </article>
+
+
+                                <article class="kids-activity-card">
+                                    <div class="kids-card-img-wrap">
+                                        <img src="pics/adultspaper.webp" alt="Practice Paper">
+                                        <div class="card-overlay">
+                                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="kids-card-body">
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-file-lines"></i>
+                                        </div>
+                                        <h3>Practice Paper</h3>
+                                        <p>Specially designed grid paper with guidelines to help kids and adults
+                                            maintain consistent
+                                            letter sizes and spacing</p>
+                                        <div class="tool-features">
+                                            <span class="feature-dot"></span>
+                                            <span>Guided Lines</span>
+                                        </div>
+                                        <button class="kids-action-btn">
+                                            Get Paper <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="kids-activity-heading">
+                        <h1>Fun Starter Activities</h1>
+                    </div>
+                    <div class="kids-activity-grid" id="kids-activities">
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/kidsactivity1.jpg" alt="Letter Tracing Activity">
+                                <div class="kids-level-badge">Beginner</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Letter Tracing</h3>
+                                <p>Master letter formation with guided tracing exercises that make learning feel like
+                                    play</p>
+                                <button class="kids-action-btn">Start Tracing <i
+                                        class="fa-solid fa-pencil"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/kidsactivity2.jpg" alt="Animal Calligraphy">
+                                <div class="kids-level-badge">Creative</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Animal Calligraphy</h3>
+                                <p>Transform letters into adorable animals—where typography meets imagination</p>
+                                <button class="kids-action-btn">Draw Animals <i class="fa-solid fa-paw"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/kidsactivity3.jpg" alt="Colorful Alphabets">
+                                <div class="kids-level-badge">Artistic</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Colorful Alphabets</h3>
+                                <p>Create vibrant, rainbow letters using colors, patterns, and decorative flourishes</p>
+                                <button class="kids-action-btn">Get Coloring <i
+                                        class="fa-solid fa-palette"></i></button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="kids-activity-heading">
+                        <h1>Creative Adventures</h1>
+                    </div>
+                    <div class="kids-activity-grid">
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/kidsactivity4.jpg" alt="Kid's First Calligraphy">
+                                <div class="kids-level-badge">Beginner</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Kid's First Calligraphy</h3>
+                                <p>A fun start to writing with style! Learn basic strokes and simple letters in an
+                                    exciting way.</p>
+                                <button class="kids-action-btn">Start Learning <i
+                                        class="fa-solid fa-pencil"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/kidsactivity5.jpg" alt="Animal Alphabet">
+                                <div class="kids-level-badge">Creative</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Animal Alphabet</h3>
+                                <p>Letters shaped like your favorite animals! Turn A into alligators and Z into zebras
+                                    with creative flair.</p>
+                                <button class="kids-action-btn">Draw & Learn <i class="fa-solid fa-paw"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/kidsactivity6.jpg" alt="Rainbow Words">
+                                <div class="kids-level-badge">Artistic</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Rainbow Words</h3>
+                                <p>Bright and colorful calligraphy fun! Mix colors, patterns, and glitter to make words
+                                    pop with joy.</p>
+                                <button class="kids-action-btn">Add Colors <i class="fa-solid fa-palette"></i></button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!--  ADULTS SECTION -->
+            <div id="adults-content" class="section-content" style="display: none;">
+
+                <div class="kids-hero-wrapper">
+                    <div class="kids-hero-inner">
+                        <span class="kids-badge">✒️ Master the Art</span>
+                        <h1>Elegant Calligraphy for Adults</h1>
+                        <p class="kids-subtitle">Discover mindfulness, precision, and timeless beauty through the art of
+                            writing</p>
+                        <button class="kids-cta-btn">
+                            <a href="#adults-activities">Begin Your Journey <i class="fa-solid fa-arrow-right"></i></a>
+                        </button>
+                    </div>
+                    <div class="kids-floating-decor">
+                        <div class="kids-float-shape float-1">✨</div>
+                        <div class="kids-float-shape float-2">🖋️</div>
+                        <div class="kids-float-shape float-3">📜</div>
+                    </div>
+                </div>
+
+                <div class="kids-intro-section">
+                    <div class="kids-intro-box">
+                        <div class="kids-icon-wrap">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop"
+                                alt="Elegant Calligraphy">
+                        </div>
+                        <div class="kids-intro-text">
+                            <h2>Why Calligraphy for Adults?</h2>
+                            <p>Calligraphy isn't just an ancient art—it's a mindful escape for adults to unleash
+                                creativity, master precision, and discover the therapeutic power of beautiful writing
+                                through practice!</p>
+                            <div class="kids-benefits">
+                                <span class="benefit-tag">🧘 Mindfulness</span>
+                                <span class="benefit-tag">🎨 Artistic Expression</span>
+                                <span class="benefit-tag">💼 Professional Skill</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kids-container">
+                        <div class="kids-activity-heading">
+                            <span class="section-tag">🎨 Creative Tools</span>
+                            <h2>Tools for Adults</h2>
+                            <p class="section-desc">Everything you need to start your calligraphy journey</p>
+                        </div>
+
+                        <div class="kids-activity-grid" id="kids-activities">
+                            <article class="kids-activity-card">
+                                <div class="kids-card-img-wrap">
+                                    <img src="pics/adultpentool1.jpg" alt="Calligraphy Pencil">
+                                    <div class="card-overlay">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="kids-card-body">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </div>
+                                    <h3>Dip Pen & Nib</h3>
+                                    <p>Start with high-quality pencils designed for perfect letter formation and
+                                        comfortable grip for small hands</p>
+                                    <div class="tool-features">
+                                        <span class="feature-dot"></span>
+                                        <span>Easy Grip</span>
+                                    </div>
+                                    <button class="kids-action-btn">
+                                        Explore Pencils <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </article>
+
+                            <article class="kids-activity-card featured">
+                                <div class="kids-card-img-wrap">
+                                    <img src="pics/adultpentool2.jpg" alt="Brush Pens">
+                                    <div class="card-overlay">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="kids-card-body">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                    </div>
+                                    <h3>Brush Pen</h3>
+                                    <p>Dual-tip brush pens that make creating thick and thin strokes effortless and fun
+                                        for young artists</p>
+                                    <div class="tool-features">
+                                        <span class="feature-dot active"></span>
+                                        <span>Dual Tip</span>
+                                    </div>
+                                    <button class="kids-action-btn">
+                                        Try Brush Pens <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </article>
+
+                            <article class="kids-activity-card">
+                                <div class="kids-card-img-wrap">
+                                    <img src="pics/adultspaper.webp" alt="Practice Paper">
+                                    <div class="card-overlay">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="kids-card-body">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-file-lines"></i>
+                                    </div>
+                                    <h3>Practice Paper</h3>
+                                    <p>Specially designed grid paper with guidelines to help kids and adults maintain
+                                        consistent
+                                        letter sizes and spacing</p>
+                                    <div class="tool-features">
+                                        <span class="feature-dot"></span>
+                                        <span>Guided Lines</span>
+                                    </div>
+                                    <button class="kids-action-btn">
+                                        Get Paper <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+
+                    <div class="kids-activity-heading">
+                        <h1>Foundation Courses</h1>
+                    </div>
+                    <div class="kids-activity-grid" id="adults-activities">
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/adultactivity1.jpg" alt="Copperplate Script">
+                                <div class="kids-level-badge">Elegant</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Copperplate Script</h3>
+                                <p>Master the dramatic thick-and-thin strokes of pointed pen calligraphy. Perfect for
+                                    wedding invitations and formal events.</p>
+                                <button class="kids-action-btn">Learn Copperplate <i
+                                        class="fa-solid fa-pen-nib"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/kidsadultactivity2.jpg" alt="Italic Calligraphy">
+                                <div class="kids-level-badge">Versatile</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Arabic Model Calligraphy</h3>
+                                <p>Islamic Calligraphy Wall Art | Handmade Acrylic Artwork PaintingIslamic Calligraphy
+                                    Wall Art | Handmade Acrylic Artwork Painting</p>
+                                <button class="kids-action-btn">Master Italic <i
+                                        class="fa-solid fa-feather"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/adultactivity3.jpg" alt="Historical Calligraphy Manuscript">
+                                <div class="kids-level-badge">Heritage</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Historical Scripts</h3>
+                                <p>Journey through 3000 years of writing evolution—from ancient Roman inscriptions to
+                                    medieval illuminated manuscripts.</p>
+                                <button class="kids-action-btn">Discover History <i
+                                        class="fa-solid fa-landmark"></i></button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="kids-activity-heading">
+                        <h1>Advanced Techniques</h1>
+                    </div>
+                    <div class="kids-activity-grid">
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/advanceadult1.jpg" alt="Classic Arabic Calligraphy">
+                                <div class="kids-level-badge">Sacred</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Classic Arabic</h3>
+                                <p>Man Kunto Maula Calligraphy Painting</p>
+                                <button class="kids-action-btn">Learn Arabic <i
+                                        class="fa-solid fa-star-and-crescent"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/advanceadult2.jpg" alt="Ancient Indic Calligraphy">
+                                <div class="kids-level-badge">Spiritual</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Digitizing Calligraphy & Watercolor</h3>
+                                <p>Transform inked, painted, or Procreate art into the digital format needed for
+                                    reproduction.</p>
+                                <button class="kids-action-btn">Digital Caligraphy <i
+                                        class="fa-solid fa-om"></i></button>
+                            </div>
+                        </article>
+
+                        <article class="kids-activity-card">
+                            <div class="kids-card-img-wrap">
+                                <img src="pics/advanceadult3.jpg" alt="Greek Manuscript Calligraphy">
+                                <div class="kids-level-badge">Classical</div>
+                            </div>
+                            <div class="kids-card-body">
+                                <h3>Modern Calligraphy</h3>
+                                <p>Learn the art of beautiful brush lettering with elegant strokes and modern style
+                                    techniques.</p>
+                                <button class="kids-action-btn"> Modern Caligraphy<i
+                                        class="fa-solid fa-landmark"></i></button>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+
+            <!-- Section Header -->
+            <div class="gallery-header">
+                <div class="header-content">
+                    <span class="section-tag">
+                        <span class="pulse-dot"></span>
+                        Our Collection
+                    </span>
+                    <h2 class="gallery-title">Calligraphy <span class="gradient-text">Gallery</span></h2>
+                    <p class="gallery-subtitle">Explore masterpieces from various traditions and styles</p>
+                    <div class="decorative-line">
+                        <div class="line-left"></div>
+                        <div class="diamond"></div>
+                        <div class="line-right"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fa-solid fa-layer-group"></i> All Works
+                </button>
+                <button class="filter-btn" data-filter="arabic">
+                    <i class="fa-solid fa-star-and-crescent"></i> Arabic
+                </button>
+                <button class="filter-btn" data-filter="western">
+                    <i class="fa-solid fa-feather-pointed"></i> Western
+                </button>
+                <button class="filter-btn" data-filter="oriental">
+                    <i class="fa-solid fa-yin-yang"></i> Oriental
+                </button>
+                <button class="filter-btn" data-filter="hebrew">
+                    <i class="fa-solid fa-yin-yang"></i> Hebrew
+                </button>
+                <button class="filter-btn" data-filter="indic">
+                    <i class="fa-solid fa-om"></i> Indic
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+
+                <div class="gallery-item" data-category="arabic" onclick="openLightbox(0)">
+                    <div class="item-image">
+                        <img src="pics/gallery1.jpg" alt="Alhamdulillah Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Arabic</span>
+                        <h3>Alhamdulillah</h3>
+                        <p>Thuluth script with gold leaf accents</p>
+
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="western" onclick="openLightbox(1)">
+                    <div class="item-image">
+                        <img src="pics/gallery2.jpg" alt="Victorian Decorative Alphabet">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Western</span>
+                        <h3>Western Font Collection</h3>
+                        <p>Vintage serif display typefaces with distressed wood texture</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item" data-category="oriental" onclick="openLightbox(2)">
+                    <div class="item-image">
+                        <img src="pics/gallery3.jpg" alt="Kanji Calligraphy - Strength">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Oriental</span>
+                        <h3>Katana Spirit</h3>
+                        <p>Japanese kanji brush calligraphy with samurai sword motif</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item" data-category="arabic" onclick="openLightbox(3)">
+                    <div class="item-image">
+                        <img src="pics/gallery4.jpg" alt="Kun Faya Kun Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Arabic</span>
+                        <h3>Kun Fayakun</h3>
+                        <p>Bold Thuluth composition with abstract black and white geometry</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="western" onclick="openLightbox(4)">
+                    <div class="item-image">
+                        <img src="pics/gallery5.jpg" alt="Copperplate Font">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Western</span>
+                        <h3>Pacocho Alonzo</h3>
+                        <p>SVG western font bundle with ornamental vintage serifs</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="oriental" onclick="openLightbox(5)">
+                    <div class="item-image">
+                        <img src="pics/gallery6.jpg" alt="Japanese Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Oriental</span>
+                        <h3>Shodo Practice</h3>
+                        <p>Japanese brush calligraphy in Kaisho style</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="arabic" onclick="openLightbox(6)">
+                    <div class="item-image">
+                        <img src="pics/gallery7.jpg" alt="Gold Arabic Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Arabic</span>
+                        <h3>Crimson Devotion</h3>
+                        <p>Black ink Arabic calligraphy with red ribbon flourish</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="oriental" onclick="openLightbox(7)">
+                    <div class="item-image">
+                        <img src="pics/gallery8.jpg" alt="Four Treasures of the Study">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Oriental</span>
+                        <h3>Flowing Spirit</h3>
+                        <p>Minimalist sumi ink brushwork in modern frame</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="arabic" onclick="openLightbox(8)">
+                    <div class="item-image">
+                        <img src="pics/gallery9.jpg" alt="Alhamdulillah Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Arabic</span>
+                        <h3>Ya Allah</h3>
+                        <p>Nocturnal Diwani with turquoise illumination</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="indic" onclick="openLightbox(9)">
+                    <div class="item-image">
+                        <img src="pics/gallery10.jpg" alt="Copperplate Script">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Arabic</span>
+                        <h3>Bismillah</h3>
+                        <p>Vertical Thuluth-Kufic fusion with interlaced geometry</p>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-item" data-category="hebrew" onclick="openLightbox(10)">
+                    <div class="item-image">
+                        <img src="pics/gallery11.jpg" alt="Shodo Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Hebrew</span>
+                        <h3>God Made Me Laugh</h3>
+                        <p>Biblical Hebrew with English copperplate translation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="indic" onclick="openLightbox(11)">
+                    <div class="item-image">
+                        <img src="pics/gallery12.jpg" alt="Shodo Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Indic</span>
+                        <h3>Peace Eternal</h3>
+                        <p>Contemporary Om symbol with triple Shanti mantra</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hebrew" onclick="openLightbox(12)">
+                    <div class="item-image">
+                        <img src="pics/gallery13.jpg" alt="Shodo Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Hebrew</span>
+                        <h3>Beloved's Promise</h3>
+                        <p>Stylized Hebrew script of Song of Solomon 6:3</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="oriental" onclick="openLightbox(13)">
+                    <div class="item-image">
+                        <img src="pics/gallery14.jpg" alt="Shodo Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Oriental</span>
+                        <h3>The Way of Writing</h3>
+                        <p>Japanese Shodo brush technique</p>
+
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="indic" onclick="openLightbox(14)">
+                    <div class="item-image">
+                        <img src="pics/gallery15.jpg" alt="Shodo Calligraphy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-expand"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-category">Indic</span>
+                        <h3>Illusion</h3>
+                        <p>Modern 3D Hindi calligraphy on grunge canvas</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="galleryLightbox" class="gallery-lightbox">
+            <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <button class="lightbox-nav prev" onclick="changeImage(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button class="lightbox-nav next" onclick="changeImage(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="lightbox-content">
+                <div class="lightbox-image-container">
+                    <img id="lightboxImg" src="" alt="">
+                    <div class="lightbox-loading" id="lightboxLoading">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+
+                <div class="lightbox-info">
+                    <span class="lightbox-category" id="lightboxCategory"></span>
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxDesc"></p>
+                    <div class="lightbox-meta" id="lightboxMeta"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Contact section  -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-hero">
+                <div class="contact-text">
+                    <span class="section-label">Get in Touch</span>
+                    <h2>Contact <em>us</em></h2>
+                    <h3>Do you have a calligraphy project in mind, or are you planning something meaningful and
+                        timeless?</h3>
+                    <p>We transform words into refined handcrafted calligraphy, created with balance, beauty, and
+                        attention to detail. We'd love to hear from you.</p>
+                    <div class="scroll-indicator">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <div class="image-frame">
+                        <div class="image-box">
+                            <img src="pics/aaaaa.png" alt="Calligraphy Art">
+                        </div>
+                        <div class="frame-corner tl"></div>
+                        <div class="frame-corner tr"></div>
+                        <div class="frame-corner bl"></div>
+                        <div class="frame-corner br"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider">
+                <span class="divider-icon">◆</span>
+            </div>
+
+            <div class="office-header">
+                <span class="section-label">Visit Us</span>
+                <h3 class="office-title">Our Studio</h3>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="form-box">
+                    <div class="form-header">
+                        <h3>Start a Conversation</h3>
+                        <p>We typically respond within 24 hours</p>
+                    </div>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" name="firstName" placeholder=" " required>
+                                <label>First Name</label>
+                                <span class="input-line"></span>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="lastName" placeholder=" " required>
+                                <label>Last Name</label>
+                                <span class="input-line"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-group select-group">
+                            <select name="country" required>
+                                <option value="" disabled selected>Select Country</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="India">India</option>
+                                <option value="USA">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="UAE">UAE</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                            </select>
+                            <span class="input-line"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="tel" name="phone" placeholder=" " required>
+                            <label>Phone Number</label>
+                            <span class="input-line"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder=" " required>
+                            <label>Email Address</label>
+                            <span class="input-line"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea name="message" placeholder=" " required minlength="10"></textarea>
+                            <label>Tell us about your project...</label>
+                            <span class="input-line"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="success-msg" id="successMsg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Thank you! Your message has been sent successfully.</span>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-header">
+                        <h2>You Have Questions,</h2>
+                        <h2 class="accent">We Have Answers</h2>
+                        <p class="desc">Discover experiences you won't find anywhere else — thoughtfully designed to
+                            immerse you in the heart of the destination.</p>
+                    </div>
+
+                    <div class="info-content">
+                        <div class="info-block location-block">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h4>Location</h4>
+                                <p>Aptech Learning Korangi<br>Nasir Jump, Korangi<br>Karachi, Pakistan</p>
+                                <a href="#" class="directions-link">Get Directions →</a>
+                            </div>
+                        </div>
+
+                        <div class="info-block social-block">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h4>Follow Our Work</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"> <i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"> <i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <div class="icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>techminds@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+92 123 456 7890</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="map-section">
+                <div class="map-header">
+                    <h3>Find Our Studio</h3>
+                    <p>Karachi, Pakistan</p>
+                </div>
+                <div class="map-container">
+                    <div class="map-overlay"></div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.271251088192!2d67.12083307393343!3d24.820395746862225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ba09c24ad91%3A0x23320c2fdcb48428!2sAptech%20Learning%20Korangi!5e0!3m2!1sen!2s!4v1770274366262!5m2!1sen!2s"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Toast Container -->
+        <div class="toast-container" id="toastContainer"></div>
+        <section class="feedback-section">
+            <div class="feedback-container" id="feedbackForm">
+                <div class="header">
+                    <h2>How was your experience?</h2>
+                    <p>Your feedback helps us improve our service</p>
+                </div>
+
+                <div class="rating-section">
+                    <label class="rating-label">Rate your experience</label>
+                    <div class="emoji-rating">
+                        <button class="emoji-btn" data-rating="1" data-label="Terrible">
+                            <span class="emoji">😠</span>
+                            <span class="rating-text">Terrible</span>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </button>
+                        <button class="emoji-btn" data-rating="2" data-label="Bad">
+                            <span class="emoji">🙁</span>
+                            <span class="rating-text">Bad</span>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </button>
+                        <button class="emoji-btn" data-rating="3" data-label="Okay">
+                            <span class="emoji">😐</span>
+                            <span class="rating-text">Okay</span>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </button>
+                        <button class="emoji-btn" data-rating="4" data-label="Good">
+                            <span class="emoji">🙂</span>
+                            <span class="rating-text">Good</span>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </button>
+                        <button class="emoji-btn" data-rating="5" data-label="Amazing">
+                            <span class="emoji">😄</span>
+                            <span class="rating-text">Amazing</span>
+                            <i class="fa-solid fa-star star-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tags-section">
+                    <label class="tags-label">What went well? (Select all that apply)</label>
+                    <div class="tags-grid">
+                        <button class="tag">Response Time</button>
+                        <button class="tag">Communication</button>
+                        <button class="tag">Helpfulness</button>
+                        <button class="tag">Knowledge</button>
+                        <button class="tag">Resolution</button>
+                        <button class="tag">Professionalism</button>
+                    </div>
+                </div>
+
+                <div class="comment-section">
+                    <label class="comment-label">Additional Comments (Optional)</label>
+                    <div class="textarea-wrapper">
+                        <textarea id="comment" placeholder="Tell us more about your experience..."
+                            maxlength="500"></textarea>
+                        <span class="char-count" id="charCount">0/500</span>
+                    </div>
+                </div>
+
+                <button class="submit-btn" id="submitBtn">
+                    <span>Submit Feedback</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <!-- Success State (Hidden by default) -->
+                <div class="success-state" id="successState">
+                    <div class="success-animation">
+                        <div class="success-circle">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <h3>Thank You!</h3>
+                    <p>Your feedback has been submitted successfully.</p>
+                    <button class="reset-btn" id="resetBtn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Submit Another Response
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="calligraphy-footer">
+        <div class="footer-border"></div>
+        <div class="ink-splash ink-splash-1"></div>
+        <div class="ink-splash ink-splash-2"></div>
+
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Quick Calligraphy</h2>
+                <p>Where every stroke tells a story. We blend traditional craftsmanship with modern elegance to create
+                    timeless calligraphic art that speaks to the soul.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"> <i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Pinterest"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"> <i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> History</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Our Work</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-pen-nib"></i> Calligraphies</a></li>
+                    <li><a href="#"><i class="fas fa-th-large"></i> Categories</a></li>
+                    <li><a href="#"><i class="fas fa-image"></i> Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Stay Inspired</h3>
+                <p>Join our newsletter for exclusive tips, new artwork releases, and workshop announcements.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address...">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Crafted with <span>❤</span> and ink © 2026 Artisan Ink. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="bootstrap files/js/bootstrap.min.js"></script>
+
+    <script src="logic js/script.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>
