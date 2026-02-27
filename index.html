@@ -2,35 +2,21 @@
 <html lang="en">
 
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art of Calligraphy - Learn the Ancient Craft</title>
     <link rel="stylesheet" href="bootstrap files/css/bootstrap.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Cinzel:wght@400;700;900&family=Cormorant
+        +Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Lateef:wght@200;300;400;
+        500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="style css/style.css">
-    <link rel="stylesheet" href="css file/mediaquery.css">
+    <link rel="stylesheet" href="css file/style.css">
+    <link rel="stylesheet" href="style css/mediaquery.css">
 </head>
 
-
 <body>
-
-
-
     <div id="preloader" class="preloader">
         <div class="loader">
             <div class="ink-drop"></div>
@@ -43,8 +29,6 @@
             <div class="loading-text">Loading</div>
         </div>
     </div>
-
-
     <header>
         <nav class="navbar glass-nav" id="navbar">
             <div class="nav-container">
@@ -62,54 +46,55 @@
                         <div class="drop">
                             <button class="btn2">
                                 <a href="#calligraphy"
-                                    style="text-decoration: none; font-style: normal; color: #8b949e;"> Calligraphy
-                                    Types</a>
+                                    style="text-decoration: none; font-style: normal;  font-size: 17px; color: #caced2; font-family: 'Lateef';">
+                                    Calligraphy Types
+                                </a>
                                 <i class="fa-solid fa-chevron-down dropdown-icon"></i>
                             </button>
                             <div class="drop-content">
-                                <a href="#western-detail" onclick="handleNavClick('calligraphy', 'western')">
+                                <a href="javascript:void(0)" onclick="handleNavClick('western')">
                                     <i class="fa-solid fa-feather-pointed icon-blue"></i>
                                     <div>
                                         <div class="dropdown-title">Western</div>
                                         <div class="dropdown-subtitle">Latin Scripts</div>
                                     </div>
                                 </a>
-                                <a href="#arabic-detail" onclick="handleNavClick('calligraphy', 'arabic')">
+                                <a href="javascript:void(0)" onclick="handleNavClick('arabic')">
                                     <i class="fa-solid fa-star-and-crescent icon-emerald"></i>
                                     <div>
                                         <div class="dropdown-title">Arabic</div>
                                         <div class="dropdown-subtitle">Islamic Art</div>
                                     </div>
                                 </a>
-                                <a href="#oriental-detail" onclick="handleNavClick('calligraphy', 'oriental')">
+                                <a href="javascript:void(0)" onclick="handleNavClick('oriental')">
                                     <i class="fa-solid fa-yin-yang icon-red"></i>
                                     <div>
                                         <div class="dropdown-title">Oriental</div>
                                         <div class="dropdown-subtitle">Brush Painting</div>
                                     </div>
                                 </a>
-                                <a href="#indic-detail" onclick="handleNavClick('calligraphy', 'indic')">
+                                <a href="javascript:void(0)" onclick="handleNavClick('indic')">
                                     <i class="fa-solid fa-om icon-orange"></i>
                                     <div>
                                         <div class="dropdown-title">Indic</div>
                                         <div class="dropdown-subtitle">Sanskrit & Devanagari</div>
                                     </div>
                                 </a>
-                                <a href="#greek-detail" onclick="handleNavClick('calligraphy', 'greek')">
+                                <a href="javascript:void(0)" onclick="handleNavClick('greek')">
                                     <i class="fa-solid fa-landmark icon-blue"></i>
                                     <div>
                                         <div class="dropdown-title">Greek</div>
                                         <div class="dropdown-subtitle">Ancient Scripts</div>
                                     </div>
                                 </a>
-                                <a href="#hebrew-detail" onclick="handleNavClick('calligraphy', 'hebrew')">
+                                <a href="javascript:void(0)" onclick="handleNavClick('hebrew')">
                                     <i class="fa-solid fa-star-of-david icon-purple"></i>
                                     <div>
                                         <div class="dropdown-title">Hebrew</div>
                                         <div class="dropdown-subtitle">Sacred Jewish Art</div>
                                     </div>
                                 </a>
-                                <a href="#cyrillic-detail" onclick="handleNavClick('calligraphy', 'cyrillic')">
+                                <a href="javascript:void(0)" onclick="handleNavClick('cyrillic')">
                                     <i class="fa-solid fa-cathedral icon-red"></i>
                                     <div>
                                         <div class="dropdown-title">Cyrillic</div>
@@ -144,7 +129,7 @@
 
                         <a href="#gallery" class="nav-link">Gallery</a>
                         <a href="#contact" class="nav-link">Contact</a>
-                        <a href="#feedback" class="nav-link">Feedback</a>
+                        <a href="#toastContainer" class="nav-link">Feedback</a>
                     </div>
 
                     <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleSidebar()">
@@ -188,49 +173,49 @@
                             <i class="fa-solid fa-chevron-down" id="chevron-types"></i>
                         </button>
                         <div class="sidebar-drop-content" id="sidebar-drop-types">
-                            <a href="#western-detail" onclick="handleSidebarNav('western')">
+                            <a href="javascript:void(0)" onclick="handleSidebarNav('western')">
                                 <i class="fa-solid fa-feather-pointed"></i>
                                 <div class="drop-text">
                                     <span class="drop-main">Western</span>
                                     <span class="drop-sub">Latin Scripts</span>
                                 </div>
                             </a>
-                            <a href="#arabic-detail" onclick="handleSidebarNav('arabic')">
+                            <a href="javascript:void(0)" onclick="handleSidebarNav('arabic')">
                                 <i class="fa-solid fa-star-and-crescent"></i>
                                 <div class="drop-text">
                                     <span class="drop-main">Arabic</span>
                                     <span class="drop-sub">Islamic Art</span>
                                 </div>
                             </a>
-                            <a href="#oriental-detail" onclick="handleSidebarNav('oriental')">
+                            <a href="javascript:void(0)" onclick="handleSidebarNav('oriental')">
                                 <i class="fa-solid fa-yin-yang"></i>
                                 <div class="drop-text">
                                     <span class="drop-main">Oriental</span>
                                     <span class="drop-sub">Brush Painting</span>
                                 </div>
                             </a>
-                            <a href="#indic-detail" onclick="handleSidebarNav('indic')">
+                            <a href="javascript:void(0)" onclick="handleSidebarNav('indic')">
                                 <i class="fa-solid fa-om"></i>
                                 <div class="drop-text">
                                     <span class="drop-main">Indic</span>
                                     <span class="drop-sub">Sanskrit & Devanagari</span>
                                 </div>
                             </a>
-                            <a href="#greek-detail" onclick="handleSidebarNav('greek')">
+                            <a href="javascript:void(0)" onclick="handleSidebarNav('greek')">
                                 <i class="fa-solid fa-landmark"></i>
                                 <div class="drop-text">
                                     <span class="drop-main">Greek</span>
                                     <span class="drop-sub">Ancient Scripts</span>
                                 </div>
                             </a>
-                            <a href="#hebrew-detail" onclick="handleSidebarNav('hebrew')">
+                            <a href="javascript:void(0)" onclick="handleSidebarNav('hebrew')">
                                 <i class="fa-solid fa-star-of-david"></i>
                                 <div class="drop-text">
                                     <span class="drop-main">Hebrew</span>
                                     <span class="drop-sub">Sacred Jewish Art</span>
                                 </div>
                             </a>
-                            <a href="#cyrillic-detail" onclick="handleSidebarNav('cyrillic')">
+                            <a href="javascript:void(0)" onclick="handleSidebarNav('cyrillic')">
                                 <i class="fa-solid fa-cathedral"></i>
                                 <div class="drop-text">
                                     <span class="drop-main">Cyrillic</span>
@@ -271,7 +256,7 @@
                         <i class="fa-solid fa-envelope"></i>
                         <span>Contact</span>
                     </a>
-                    <a href="#feedback" class="sidebar-link" onclick="closeSidebar()">
+                    <a href="#toastContainer" class="sidebar-link" onclick="closeSidebar()">
                         <i class="fa-solid fa-comment-dots"></i>
                         <span>Feedback</span>
                     </a>
@@ -570,7 +555,7 @@
                     </p>
                 </div>
 
-                <div class="origins-visual">
+                <div class="origins-visual" style=" font-family: 'Cormorant Garamond';">
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-date">2000 BCE</div>
@@ -852,8 +837,7 @@
                                     <li><i class="fa-solid fa-star"></i> Creative projects</li>
                                     <li><i class="fa-solid fa-star"></i> No sharp tools</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Western Kids...')">Enroll Now</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Enroll Now</a>
                             </div>
 
                             <div class="age-card">
@@ -870,8 +854,7 @@
                                     <li><i class="fa-solid fa-star"></i> Illumination techniques</li>
                                     <li><i class="fa-solid fa-star"></i> Professional certification</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Western Adults...')">Start Learning</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Start Learning</a>
                             </div>
                         </div>
                     </div>
@@ -960,7 +943,7 @@
                                     <li><i class="fa-solid fa-star"></i> Decorative patterns</li>
                                     <li><i class="fa-solid fa-star"></i> Cultural appreciation</li>
                                 </ul>
-                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Arabic Kids...')">Enroll
+                                <a href="#" class="enroll-btn" onclick="showToast()">Enroll
                                     Now</a>
                             </div>
 
@@ -978,8 +961,7 @@
                                     <li><i class="fa-solid fa-star"></i> Composition (Tashkeel)</li>
                                     <li><i class="fa-solid fa-star"></i> Ijaza certification</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Arabic Adults...')">Start Learning</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Start Learning</a>
                             </div>
                         </div>
                     </div>
@@ -1064,8 +1046,7 @@
                                     <li><i class="fa-solid fa-star"></i> Ink wash painting basics</li>
                                     <li><i class="fa-solid fa-star"></i> Mindfulness games</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Oriental Kids...')">Enroll Now</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Enroll Now</a>
                             </div>
 
                             <div class="age-card">
@@ -1082,8 +1063,7 @@
                                     <li><i class="fa-solid fa-star"></i> Copying masterpieces (Rinsho)</li>
                                     <li><i class="fa-solid fa-star"></i> Personal style development</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Oriental Adults...')">Start Learning</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Start Learning</a>
                             </div>
                         </div>
                     </div>
@@ -1173,7 +1153,7 @@
                                     <li><i class="fa-solid fa-star"></i> Festival art projects</li>
                                     <li><i class="fa-solid fa-star"></i> Cultural storytelling</li>
                                 </ul>
-                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Indic Kids...')">Enroll
+                                <a href="#" class="enroll-btn" onclick="showToast()">Enroll
                                     Now</a>
                             </div>
 
@@ -1191,7 +1171,7 @@
                                     <li><i class="fa-solid fa-star"></i> Sacred text copying</li>
                                     <li><i class="fa-solid fa-star"></i> Spiritual calligraphy practice</li>
                                 </ul>
-                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Indic Adults...')">Start
+                                <a href="#" class="enroll-btn" onclick="showToast()">Start
                                     Learning</a>
                             </div>
                         </div>
@@ -1285,7 +1265,7 @@
                                     <li><i class="fa-solid fa-star"></i> Ancient Greek art</li>
                                     <li><i class="fa-solid fa-star"></i> Mathematical symbols</li>
                                 </ul>
-                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Greek Kids...')">Enroll
+                                <a href="#" class="enroll-btn" onclick="showToast()">Enroll
                                     Now</a>
                             </div>
 
@@ -1303,7 +1283,7 @@
                                     <li><i class="fa-solid fa-star"></i> Manuscript illumination</li>
                                     <li><i class="fa-solid fa-star"></i> Classical text copying</li>
                                 </ul>
-                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Greek Adults...')">Start
+                                <a href="#" class="enroll-btn" onclick="showToast()">Start
                                     Learning</a>
                             </div>
                         </div>
@@ -1395,7 +1375,7 @@
                                     <li><i class="fa-solid fa-star"></i> Hebrew name writing</li>
                                     <li><i class="fa-solid fa-star"></i> Biblical stories</li>
                                 </ul>
-                                <a href="#" class="enroll-btn" onclick="showToast('Enrolling in Hebrew Kids...')">Enroll
+                                <a href="#" class="enroll-btn" onclick="showToast()">Enroll
                                     Now</a>
                             </div>
 
@@ -1413,8 +1393,7 @@
                                     <li><i class="fa-solid fa-star"></i> Ketubah design</li>
                                     <li><i class="fa-solid fa-star"></i> Sofer certification prep</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Hebrew Adults...')">Start Learning</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Start Learning</a>
                             </div>
                         </div>
                     </div>
@@ -1507,8 +1486,7 @@
                                     <li><i class="fa-solid fa-star"></i> Icon border designs</li>
                                     <li><i class="fa-solid fa-star"></i> Cultural crafts</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Cyrillic Kids...')">Enroll Now</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Enroll Now</a>
                             </div>
 
                             <div class="age-card">
@@ -1525,8 +1503,7 @@
                                     <li><i class="fa-solid fa-star"></i> Reed pen techniques</li>
                                     <li><i class="fa-solid fa-star"></i> Iconography integration</li>
                                 </ul>
-                                <a href="#" class="enroll-btn"
-                                    onclick="showToast('Enrolling in Cyrillic Adults...')">Start Learning</a>
+                                <a href="#" class="enroll-btn" onclick="showToast()">Start Learning</a>
                             </div>
                         </div>
                     </div>
@@ -2425,7 +2402,7 @@
                             <span class="input-line"></span>
                         </div>
 
-                        <button type="submit" class="submit-btn">
+                        <button type="submit" class="submit-btn1">
                             <span>Send Message</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
@@ -2435,14 +2412,7 @@
                         </button>
                     </form>
 
-                    <div class="success-msg" id="successMsg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>Thank you! Your message has been sent successfully.</span>
-                    </div>
+
                 </div>
 
                 <div class="info-box">
@@ -2552,7 +2522,7 @@
 
 
 
-        <!-- Toast Container -->
+        <!-- feedback -->
         <div class="toast-container" id="toastContainer"></div>
         <section class="feedback-section">
             <div class="feedback-container" id="feedbackForm">
@@ -2689,12 +2659,12 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2026 QuickCalligraphy. Crafted <span>❤</span> with passion & precision. All rights reserved.</p>
+            <p>Crafted with <span>❤</span> and ink © 2026 QuickCalligraphy. All rights reserved.</p>
         </div>
     </footer>
     <script src="bootstrap files/js/bootstrap.min.js"></script>
 
-    <script src="logic js/logic.js"></script>
+    <script src="logic js/script.js"></script>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

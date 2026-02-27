@@ -37,7 +37,7 @@
 
 
 
-     /*  PRELOADER - QUICKCALLIGRAPHY THEME*/
+     /*  PRELOADER - QUICKCALLIGRAPHY */
 
      .preloader {
          position: fixed;
@@ -219,15 +219,8 @@
          padding: 0;
      }
 
-
-
-
-     .bg-grid {
-         background-image:
-             linear-gradient(rgba(201, 162, 39, 0.04) 1px, transparent 1px),
-             linear-gradient(90deg, rgba(201, 162, 39, 0.04) 1px, transparent 1px);
-         background-size: 50px 50px;
-         animation: gridMove 20s linear infinite;
+     html {
+         scroll-behavior: smooth;
      }
 
      /*NAVBAR BASE STYLES*/
@@ -304,11 +297,13 @@
      .nav-link {
          position: relative;
          display: inline-block;
-         color: #8B949E;
+
          text-decoration: none;
          padding: 0.5rem 1rem;
          transition: color 0.3s ease;
-         font-size: 0.9rem;
+         font-size: 17px;
+         color: #caced2;
+         font-family: 'Lateef';
      }
 
      .nav-link::after {
@@ -347,6 +342,9 @@
          padding: 0.6rem 1rem;
          border-radius: 10px;
          transition: all 0.3s ease;
+          font-size: 17px;
+         color: #caced2;
+         font-family: 'Lateef';
      }
 
      .btn2:hover {
@@ -1786,12 +1784,14 @@
          display: inline-flex;
          align-items: center;
          gap: 10px;
-         padding: 12px 24px;
+         padding: 12px 19px;
          background: rgba(201, 162, 39, 0.12);
          border: 2px solid rgba(201, 162, 39, 0.4);
          border-radius: 50px;
          transition: all 0.3s ease;
          cursor: default;
+             margin-bottom: 20px;
+
      }
 
      .greek-badge:hover {
@@ -2000,7 +2000,7 @@
          text-transform: uppercase;
      }
 
-   
+
 
 
 
@@ -2031,6 +2031,7 @@
          margin-bottom: 1.5rem;
          color: #F0F4F8;
          text-align: justify;
+         font-family: 'Cormorant Garamond';
      }
 
      .highlight-box {
@@ -2102,10 +2103,10 @@
 
 
 
-   
 
 
-  /* TRADITIONS SECTION */
+
+     /* TRADITIONS SECTION */
 
 
      :root {
@@ -2370,7 +2371,7 @@
          box-shadow: 0 4px 10px rgba(201, 162, 39, 0.4);
      }
 
-   
+
 
      .detail-section {
          padding: 80px 5%;
@@ -2787,7 +2788,7 @@
          font-size: 2.2rem;
          color: #E5C158;
          margin-bottom: 1rem;
-       
+
      }
 
 
@@ -4009,7 +4010,7 @@
          overflow: hidden;
      }
 
-      .contact-section::before {
+     .contact-section::before {
          content: '';
          position: absolute;
          top: 0;
@@ -4022,7 +4023,7 @@
          pointer-events: none;
      }
 
- 
+
      .contact-hero {
          display: grid;
          grid-template-columns: 1.2fr 1fr;
@@ -4218,7 +4219,7 @@
          border-color: var(--gold-light);
      }
 
-    
+
 
      .divider {
          display: flex;
@@ -4253,7 +4254,7 @@
          }
      }
 
-  
+
 
      .office-header {
          margin-bottom: 60px;
@@ -4445,7 +4446,7 @@
          pointer-events: none;
      }
 
-     .submit-btn {
+     .submit-btn1 {
          background: transparent;
          color: var(--gold);
          border: 1px solid var(--gold);
@@ -4465,7 +4466,7 @@
          font-family: 'Cinzel', serif;
      }
 
-     .submit-btn::before {
+     .submit-btn1::before {
          content: '';
          position: absolute;
          top: 0;
@@ -4477,42 +4478,28 @@
          z-index: 0;
      }
 
-     .submit-btn span,
-     .submit-btn svg {
+     .submit-btn1 span,
+     .submit-btn1 svg {
          position: relative;
          z-index: 1;
          transition: all 0.3s var(--transition-smooth);
      }
 
-     .submit-btn:hover {
+     .submit-btn1:hover {
          color: var(--black);
+         
      }
 
-     .submit-btn:hover::before {
+     .submit-btn1:hover::before {
          left: 0;
      }
 
-     .submit-btn:hover svg {
+     .submit-btn1:hover svg {
          transform: translateX(3px);
      }
 
-     .success-msg {
-         display: none;
-         align-items: center;
-         gap: 12px;
-         background: rgba(34, 197, 94, 0.08);
-         border: 1px solid rgba(34, 197, 94, 0.3);
-         color: #4ade80;
-         padding: 20px;
-         margin-top: 25px;
-         font-size: 0.95rem;
-     }
 
-     .success-msg svg {
-         flex-shrink: 0;
-     }
 
-     
 
      .info-box {
          padding: 40px;
@@ -4800,9 +4787,9 @@
          filter: grayscale(0%) contrast(1) brightness(1);
      }
 
-  
 
-     
+
+
      .fade-in {
          opacity: 0;
          transform: translateY(30px);
@@ -4816,7 +4803,7 @@
 
 
 
-     
+
      /* FEEDBACK SECTION*/
      .feedback-section {
          min-height: 100vh;
@@ -5383,8 +5370,8 @@
      }
 
      .social-links a {
-         width: 40px;
-         height: 40px;
+         width: 60px;
+         height: 50px;
          border: 1px solid #E5C158;
          border-radius: 50%;
          display: flex;
